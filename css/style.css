@@ -9,6 +9,7 @@
     height: 100vh;
     
     background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 99% 75%, 48% 100%, 48% 100%, 0 70%);
 }
 .hero h3{
     color:coral;
@@ -26,26 +27,27 @@
     margin-right: auto;
     margin-top: 60px;
     margin-bottom: 60px; */
-    margin: 150px auto;
-    background-color: aquamarine;
+    margin: 200px auto;
+   background: linear-gradient(pink ,skyblue);
     padding: 60px;
     border-width: 15px;
     border-color: yellow;
     border-style: solid;
 }
-.article h2{
+.article h2,#cow_types h3{
     text-align: center;
     font-size: 48px;
-    
+    margin: 200px auto;
     border-bottom: 2px;
     border-color: yellow;
     border-style: solid;
-    border-width: 2px;
+    border-width: 10px;
     border-top: 0;
     border-left: 0;
     border-right: 0;
     margin-bottom: 15px;
     padding: 10px;
+    
 
 }
 .article p{
@@ -57,4 +59,25 @@
     background-color: yellow;
     height: 50px;
     display: inline-block;
+}
+.cow-type{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+    
+}
+.cow-type div{
+    min-width: 25%;
+}
+.cow-type img{
+    width: 300px;
+}
+#cow_types{
+    background: linear-gradient(pink,skyblue);
+    width: 80%;
+    margin: 150px auto;
+    padding: 60px;
+    border-width: 150px;
+    border-color: yellow;
 }
